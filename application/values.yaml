@@ -50,14 +50,14 @@ ingress:
     acme.cert-manager.io/http01-edit-in-place: "true"
 
   hosts:
-    - host: argo-demo.jadomars.com
+    - host: ext-demo.jadomars.com
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls: 
-    - secretName: argo-demo-tls
+    - secretName: ext-demo-tls
       hosts:
-       - cargo-demo.jadomars.com
+       - ext-demo.jadomars.com
 
 resources: 
   # We usually recommend not to specify default resources and to leave this as a conscious
